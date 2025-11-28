@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tool Panel</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      .container {
+        text-align: center;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        max-width: 600px;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        opacity: 0.9;
+      }
+      .info {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+      }
+      .info h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .info ul {
+        list-style: none;
+        text-align: left;
+      }
+      .info li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      .info li:last-child {
+        border-bottom: none;
+      }
+      .link {
+        color: #fff;
+        text-decoration: underline;
+      }
+      .link:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🔧 Tool Panel</h1>
+      <p>Backend API Server</p>
+      <div class="info">
+        <h2>Server Information</h2>
+        <ul>
+          <li><strong>Status:</strong> Running</li>
+          <li><strong>Port:</strong> 5000</li>
+          <li><strong>API Base:</strong> <a href="/api" class="link">/api</a></li>
+          <li><strong>Health Check:</strong> <a href="/api/health" class="link">/api/health</a></li>
+        </ul>
+      </div>
+      <div class="info" style="margin-top: 1rem;">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="/api" class="link">API Information</a></li>
+          <li><a href="/api/health" class="link">Health Check</a></li>
+          <li><a href="/api/admin/products" class="link">Admin Products</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+
